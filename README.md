@@ -1,4 +1,4 @@
-# migration-secrets
+# migration-money-tracker
 Database migrations for MoneyTracker
 
 ##Phinx Documentation
