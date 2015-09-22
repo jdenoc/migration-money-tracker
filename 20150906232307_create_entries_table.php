@@ -25,7 +25,7 @@ class CreateEntriesTable extends AbstractMigration
         );
         $table->addColumn('deleted', 'integer', array('limit'=>MysqlAdapter::INT_TINY, 'default'=>0));
         $table->addColumn('stamp', 'timestamp', array('default'=>'CURRENT_TIMESTAMP'));
-        $table->addIndex(array('entry_date'));
+        $table->addIndex(array('date'));
         $table->save();
     }
 
