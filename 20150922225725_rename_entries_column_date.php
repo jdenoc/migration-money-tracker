@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class AlterEntriesColumnDate extends AbstractMigration {
+class RenameEntriesColumnDate extends AbstractMigration {
 
     /**
      * Migrate UP
