@@ -15,9 +15,9 @@ class CreateEntriesTable extends AbstractMigration
     public function up(){
         $table = $this->table('entries', array('id'=>false, 'primary_key'=>'id'));
         $table->addColumn('id', 'integer', array('signed'=>false, 'identity'=>true));
-        $table->addColumn('entry_date', 'date');
+        $table->addColumn('date', 'date');
         $table->addColumn('account_type', 'integer', array('signed'=>false));
-        $table->addColumn('entry_value', 'decimal', array('precision'=>10, 'scale'=>2));
+        $table->addColumn('value', 'decimal', array('precision'=>10, 'scale'=>2));
         $table->addColumn('memo', 'text');
         $table->addColumn('expense', 'integer', array('limit'=>MysqlAdapter::INT_TINY, 'default'=>1));
         $table->addColumn('confirm', 'integer',
