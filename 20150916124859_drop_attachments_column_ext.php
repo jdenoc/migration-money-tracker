@@ -2,11 +2,11 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class DropAttachmentsColumnExt extends AbstractMigration
-{
+class DropAttachmentsColumnExt extends AbstractMigration {
+
     /**
      * Migrate UP
-     * Drop `ext` column in `Attachments` table
+     * Drop `ext` column in `attachments` table
      *
      * More information on writing migrations is available here:
      * http://docs.phinx.org/en/latest/migrations.html#the-abstractmigration-class
@@ -18,8 +18,8 @@ class DropAttachmentsColumnExt extends AbstractMigration
     }
 
     /**
-     * Migrate UP
-     * Create `ext` column in `Attachments` table
+     * Migrate DOWN
+     * Create `ext` column in `attachments` table
      *
      * More information on writing migrations is available here:
      * http://docs.phinx.org/en/latest/migrations.html#the-abstractmigration-class
