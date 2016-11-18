@@ -1,0 +1,6 @@
+{
+    "name": "jdenoc/MoneyTracker-migration",
+    "require": {
+        "robmorgan/phinx": "^0.6.5"
+    }
+}
